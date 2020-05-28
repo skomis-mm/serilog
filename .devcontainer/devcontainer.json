@@ -26,7 +26,8 @@
     "ms-vscode.powershell",
     "eamodio.gitlens",
     "github.vscode-pull-request-github",
-    "davidanson.vscode-markdownlint"
+    "davidanson.vscode-markdownlint",
+    "ms-azuretools.vscode-docker"
   ],
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   "forwardPorts": [
