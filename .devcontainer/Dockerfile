@@ -27,7 +27,7 @@ RUN apt-get update && apt-get upgrade \
     && apt-get install -y sudo \
     && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME\
     && chmod 0440 /etc/sudoers.d/$USERNAME \
-    #
+    # install additional .net core sdks
     && curl -sSL https://dot.net/v1/dotnet-install.sh | sudo bash /dev/stdin --channel 2.1 --install-dir /usr/share/dotnet \
     #
     # Clean up
