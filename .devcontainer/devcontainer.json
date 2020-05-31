@@ -15,6 +15,7 @@
     "editor.renderWhitespace": "all",
     "csharp.suppressDotnetRestoreNotification": true
   },
+  "forwardPorts": [ 5341, 5432 ],
   "extensions": [
     "ms-dotnettools.csharp",
     "editorconfig.editorconfig",
