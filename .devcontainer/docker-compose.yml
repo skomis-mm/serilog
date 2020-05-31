@@ -30,5 +30,7 @@ services:
   seq:
     container_name: seq
     image: datalust/seq
+    environment:
+      ACCEPT_EULA: 'Y'
     ports:
       - '5341:5341'

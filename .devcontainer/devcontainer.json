@@ -5,6 +5,7 @@
   "dockerComposeFile": "docker-compose.yml",
 	"service": "serilog",
   "remoteUser": "vscode",
+  "runServices": [ "seq", "redis" ],
   "settings": {
     "terminal.integrated.shell.linux": "/bin/bash",
     "omnisharp.enableEditorConfigSupport": true,
