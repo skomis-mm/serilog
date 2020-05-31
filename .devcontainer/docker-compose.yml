@@ -2,8 +2,8 @@ version: '3.4'
 
 services:
   serilog:
+    container_name: serilog
     build:
-      container_name: serilog
       context: .
       dockerfile: Dockerfile
       args:
