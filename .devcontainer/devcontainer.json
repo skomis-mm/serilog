@@ -1,0 +1,32 @@
+// For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.112.0/containers/dotnetcore-3.1
+{
+  "name": "Serilog",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "USERNAME": "vscode"
+    }
+  },
+  "remoteUser": "vscode",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "omnisharp.enableEditorConfigSupport": true,
+    "vssolution.createTemplateFolderQuestion": false,
+    "csharp.supressBuildAssetsNotification": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.renderWhitespace": "all",
+    "csharp.suppressDotnetRestoreNotification": true
+  },
+  "extensions": [
+    "ms-dotnettools.csharp",
+    "editorconfig.editorconfig",
+    "fernandoescolar.vscode-solution-explorer",
+    "ms-vscode.powershell",
+    "eamodio.gitlens",
+    "github.vscode-pull-request-github",
+    "davidanson.vscode-markdownlint",
+    "ms-azuretools.vscode-docker"
+  ],
+  "postCreateCommand": "bash ./build.sh"
+}
